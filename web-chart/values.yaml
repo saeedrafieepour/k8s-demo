@@ -1,8 +1,8 @@
-replicaCount: 3
+replicaCount: 2
 image:
   repository: nginx
   tag: "1.27"
-message: "Deployed by ArgoCD"
+message: "Hello from Helm"
 environment: dev
 secretName: web-secret      # set to "" to skip the secret
 service:
