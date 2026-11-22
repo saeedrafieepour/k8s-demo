@@ -1,0 +1,12 @@
+replicaCount: 2
+image:
+  repository: nginx
+  tag: "1.27"
+message: "Hello from Helm"
+environment: dev
+secretName: web-secret      # set to "" to skip the secret
+service:
+  port: 80
+resources:
+  requests: { cpu: 50m, memory: 32Mi }
+  limits:   { cpu: 200m, memory: 128Mi }
